@@ -1,0 +1,36 @@
+# LiterataPlus: Literata + Kavita OPDS progress icons for CrossPoint.
+#
+# Build with:  python3 cpfont_patch.py build families/literata.yaml
+#
+# The output is deliberately NOT named "Literata": a family with the same
+# name as CrossPoint's stock Literata download would collide with it.
+name: LiterataPlus
+sizes: [8, 10, 12, 14, 16, 18]
+# Optional. When omitted, intervals are worked out from the font's coverage
+# (latin-ext + greek/cyrillic/ipa-chars if present + the profile codepoints).
+intervals: latin-ext,greek,cyrillic,ipa-chars
+profiles: [kavita-progress]
+source:
+  name: Literata
+  license: OFL-1.1
+  license_file: fonts/Literata/OFL.txt
+  copyright: Copyright 2017 The Literata Project Authors (https://github.com/googlefonts/literata)
+# Same shape as CrossPoint's lib/EpdFont/scripts/sd-fonts.yaml.
+# `path` is relative to this repository; `url` is used if the path is missing.
+styles:
+  regular:
+    path: fonts/Literata/Literata-Regular.ttf
+    url: https://raw.githubusercontent.com/googlefonts/literata/main/fonts/ttf/Literata-Regular.ttf
+    sha256: 0390890de9bb9d5862a6ba4125b82c61792ccc3d66b63e73eee75c1a16fcd208
+  bold:
+    path: fonts/Literata/Literata-Bold.ttf
+    url: https://raw.githubusercontent.com/googlefonts/literata/main/fonts/ttf/Literata-Bold.ttf
+    sha256: b6af95b3b443cdbce964aa06741596987f2f5c3ede46a2bc846e5addd99d061f
+  italic:
+    path: fonts/Literata/Literata-Italic.ttf
+    url: https://raw.githubusercontent.com/googlefonts/literata/main/fonts/ttf/Literata-Italic.ttf
+    sha256: 198f70cc9a17bab578553fa274b81984d58c440efe26bc06f1d841c194b6691a
+  bolditalic:
+    path: fonts/Literata/Literata-BoldItalic.ttf
+    url: https://raw.githubusercontent.com/googlefonts/literata/main/fonts/ttf/Literata-BoldItalic.ttf
+    sha256: 1dade59381ad02f4679d7e993a7a406472e587ac332af7a6168d3ad9214a99dc

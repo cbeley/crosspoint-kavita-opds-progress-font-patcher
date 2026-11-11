@@ -1,0 +1,23 @@
+# Kavita OPDS reading-progress icons.
+#
+# Kavita prefixes every OPDS entry title with one of these icons when the
+# per-user OPDS preference "Embed Progress Indicator" is on (the default).
+# See Kavita.Services/OpdsService.cs (GetReadingProgressIcon).
+name: kavita-progress
+description: Kavita OPDS reading-progress icons
+codepoints:
+  - 0x2B58  # ⭘ not started
+  - 0x25D4  # ◔ up to 25%
+  - 0x25D1  # ◑ over 25%, up to 50%
+  - 0x25D5  # ◕ over 50%, under 100%
+  - 0x2B24  # ⬤ finished
+fallback:
+  # Noto Sans Symbols 2 has all five glyphs. Regular only (no bold/italic),
+  # so the same file is used as the fallback for every style.
+  path: fonts/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf
+  url: https://cdn.jsdelivr.net/gh/notofonts/notofonts.github.io@main/fonts/NotoSansSymbols2/unhinted/ttf/NotoSansSymbols2-Regular.ttf
+  sha256: c4a0a80f0041ce4be81e2478faad22776d23edb98ae3f0d19bd37044820ecf9d
+  name: Noto Sans Symbols 2
+  license: OFL-1.1
+  license_file: fonts/NotoSansSymbols2/OFL.txt
+  copyright: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/symbols)
