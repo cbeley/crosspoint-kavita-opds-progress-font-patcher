@@ -1,5 +1,7 @@
 vendor/
-dist/
+# Build output is ignored, except the prebuilt LiterataPlus family.
+dist/*
+!dist/LiterataPlus/
 __pycache__/
 *.pyc
 .venv/
