@@ -39,7 +39,14 @@ taken from Noto Sans Symbols 2, at 8–18 pt.
 Because the fallback works per string, a title like `◔ Dune` is drawn entirely
 in LiterataPlus. Titles without an icon still use the built-in interface font.
 
-## Quick start: build LiterataPlus
+## Quick start: download LiterataPlus
+
+Prebuilt files are in [`dist/LiterataPlus/`](dist/LiterataPlus/). Download the
+six `.cpfont` files and follow [Installing on CrossPoint](#installing-on-crosspoint).
+They were built from the pinned crosspoint-reader commit; rebuild (below) if a
+CrossPoint firmware update changes the font format.
+
+## Build LiterataPlus yourself
 
 Needs Python 3.10+ and git.
 
@@ -226,7 +233,8 @@ downloads it). Skip them with `python3 -m pytest -m "not integration"`.
 | `fonts/Literata/` | Unmodified Literata 3.103 static TTFs + OFL |
 | `fonts/NotoSansSymbols2/` | Unmodified Noto Sans Symbols 2 2.008 + OFL |
 | `tests/` | pytest suite |
-| `vendor/`, `dist/` | Git-ignored: converter checkout, downloads, build output |
+| `dist/LiterataPlus/` | Prebuilt LiterataPlus `.cpfont` files + `LICENSE-fonts.txt` |
+| `vendor/`, other `dist/` folders | Git-ignored: converter checkout, downloads, build output |
 
 ## Licensing
 
